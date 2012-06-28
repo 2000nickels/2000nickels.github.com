@@ -4,7 +4,7 @@
   <title><![CDATA[2000 Nickels]]></title>
   <link href="http://2000nickels.github.com/atom.xml" rel="self"/>
   <link href="http://2000nickels.github.com/"/>
-  <updated>2012-06-27T22:06:15-04:00</updated>
+  <updated>2012-06-27T23:07:51-04:00</updated>
   <id>http://2000nickels.github.com/</id>
   <author>
     <name><![CDATA[Nic]]></name>
@@ -20,6 +20,8 @@
     <id>http://2000nickels.github.com/blog/2012/06/27/testing</id>
     <content type="html"><![CDATA[<p>This is a test post. This is only a test post. In the event of an actual post,
 you will be instructed where to point your browser.  This is only a test post.</p>
+
+<p>^G ^G ^G ^G ^G ^G ^G</p>
 ]]></content>
   </entry>
   
