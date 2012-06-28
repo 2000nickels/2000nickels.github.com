@@ -4,7 +4,7 @@
   <title><![CDATA[2000 Nickels]]></title>
   <link href="http://2000nickels.github.com/atom.xml" rel="self"/>
   <link href="http://2000nickels.github.com/"/>
-  <updated>2012-06-27T23:17:23-04:00</updated>
+  <updated>2012-06-27T23:18:26-04:00</updated>
   <id>http://2000nickels.github.com/</id>
   <author>
     <name><![CDATA[Nic]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Test Number Two]]></title>
+    <link href="http://2000nickels.github.com/blog/2012/06/27/test-number-two/"/>
+    <updated>2012-06-27T23:12:00-04:00</updated>
+    <id>http://2000nickels.github.com/blog/2012/06/27/test-number-two</id>
+    <content type="html"><![CDATA[<p>This is test post number two.  It is the second a series of test posts.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Testing]]></title>
