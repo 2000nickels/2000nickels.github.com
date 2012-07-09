@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 
-On the [Hypercritical](http://5by5.tv/hypercritical) podcast, John Siracusa is often worried about the length of his podcast.  Personally, I like the long episodes, but as they say, "It's his show."  Let's look at the data.
+On the [Hypercritical](http://5by5.tv/hypercritical) podcast, John Siracusa often worries his podcast is too long.  Personally, I like the long episodes, but as they say, "It's his show."  Let's look at the data.
 
 There are two main questions we can ask about Hypercritical's length:
 
