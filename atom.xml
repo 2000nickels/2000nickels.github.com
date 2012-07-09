@@ -4,7 +4,7 @@
   <title><![CDATA[2000 Nickels]]></title>
   <link href="http://2000nickels.github.com/atom.xml" rel="self"/>
   <link href="http://2000nickels.github.com/"/>
-  <updated>2012-07-05T21:28:10-04:00</updated>
+  <updated>2012-07-08T23:30:54-04:00</updated>
   <id>http://2000nickels.github.com/</id>
   <author>
     <name><![CDATA[Nic]]></name>
@@ -14,6 +14,45 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Hypercritical Length]]></title>
+    <link href="http://2000nickels.github.com/blog/2012/07/08/hypercritical-length/"/>
+    <updated>2012-07-08T20:49:00-04:00</updated>
+    <id>http://2000nickels.github.com/blog/2012/07/08/hypercritical-length</id>
+    <content type="html"><![CDATA[<p>On the <a href="http://5by5.tv/hypercritical">Hypercritical</a> podcast, John Siracusa is often worried about the length of his podcast.  Personally, I like the long episodes, but as they say, &#8220;It&#8217;s his show.&#8221;  Let&#8217;s look at the data.</p>
+
+<p>There are two main questions we can ask about Hypercritical&#8217;s length:</p>
+
+<p><strong>The Goal:</strong> In <a href="http://5by5.tv/hypercritical/51">episode #51</a>, John said, &#8220;That&#8217;s my personal goal, that I want to try for something shorter.&#8221;  Are the episodes after #51 are shorter than the earlier episodes?</p>
+
+<p><strong>The Jinx:</strong> When John says he is planning a short show, sometimes it becomes one of the  longest episodes. (At 2 hours and 14 minutes, I&#8217;m looking at you, <a href="http://5by5.tv/hypercritical/68">#68: Patent Hands</a>.)  Are the <em>short</em> shows longer than the <em>not-short</em> shows?  Does he jinx it by declaring it a short show?</p>
+
+<h3>The Data</h3>
+
+<p>I collected all the Hypercritical episode lengths, then I started listening to the beginning of each episode.  (Forgive me Dan, but I <em>might</em> have listened at double speed.  It was in the name of science.)  I started at episode <a href="http://5by5.tv/hypercritical/75">#75: Just a Dinosaur</a>, and worked my way back to <a href="http://5by5.tv/hypercritical/51">#51: Unjustified Confidence</a>, where John declared his goal (definitely not a New Year&#8217;s resolution) to have shorter shows.</p>
+
+<p>Of those 25 post-goal episodes, I counted 8 where John said it was going to be a short show or his time was limited: #51, #52, #60, #68, #71, #72, #74, and #75.  These are the <em>short</em> episodes, regardless of the actual length.  That leaves 16 <em>not-short</em> episodes, ignoring #54, which was the 1 minute public service announcement for the <a href="http://5by5.tv/specials/4">Kindacritical special</a>.</p>
+
+<p>Putting all the data together, here&#8217;s a plot of the episode lengths, colored by type: <em>pre-goal</em>, <em>short</em>, and <em>non-short</em>.  I can see by eye that the <em>post-goal</em> episodes are not shorter than the <em>pre-goal</em> episodes, but I can&#8217;t tell if the &#8220;short show&#8221; jinx is true.   Let&#8217;s dig in further.</p>
+
+<p><img src="http://2000nickels.github.com/images/hypercritical_length_scatter_plot.png" title="Plot of episode lengths" ></p>
+
+<h3>The Goal</h3>
+
+<p>When we plot the cumulative distributions of the <em>pre-</em> and <em>post-goal</em> shows, it&#8217;s very obvious that the <em>post-goal</em> shows are not shorter, by any measure.  After stating his goal, John is not getting any worse (that is, the maximum length has stayed at 135 minutes), but the median episode length has increased from 85 to 106 minutes.</p>
+
+<p><img src="http://2000nickels.github.com/images/hypercritical_length_goal_cdf.png" title="Cumulative distribution of pre- and post-goal shows" ></p>
+
+<h3>The Jinx</h3>
+
+<p>The interesting question is: can John jinx the show by saying it will be short?  The data here is a little more complicated.  In the cumulative distribution plot below, we can see both the <em>short</em> and the <em>not-short</em> episode lengths.  While 2 out of 3 of the longest episodes were in the <em>short</em> group, the median episode length is 7 minutes less when he calls it a &#8220;short&#8221; show.  Also, 4 of the 5 shortest episodes belong to the <em>short</em> group, and the average <em>short</em> show is 103 minutes versus 109 minutes for the <em>not-short</em> shows.  So, we can disprove the jinx; when John says it will be a short show, I&#8217;m going to bet that it will be shorter.</p>
+
+<p><img src="http://2000nickels.github.com/images/hypercritical_length_short_cdf.png" title="Cumulative distribution of pre- and post-goal shows" ></p>
+
+<p>Let me express my thanks to John Siracusa and Dan Benjamin for making the Hypercritical podcast.  Long or short, I look forward to it every week.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[E. Power-Converter Biggs]]></title>
     <link href="http://2000nickels.github.com/blog/2012/07/05/e-power-converter-biggs/"/>
     <updated>2012-07-05T17:01:00-04:00</updated>
@@ -21,9 +60,8 @@
     <content type="html"><![CDATA[<p><img src="http://2000nickels.github.com/images/EPowerconverterBiggs.jpg" title="E. Power-Converter Biggs" ></p>
 
 <p>One of the most promising jet organists in the Empire, <a href="http://en.wikipedia.org/wiki/E._Power_Biggs">E. Power</a>-<a href="http://starwars.wikia.com/wiki/Biggs_Darklighter">Converter Biggs</a>
-came to Tatooine
-to study the nalargon under Max Rebo.  There, he discovered his
-piloting skill and his diastase for the Empire. Now, he must choose between his love of
+came to Tatooine to study the nalargon under Max Rebo.  There, he discovered his
+piloting skill and his distaste for the Empire. Now, he must choose between his love of
 music and the Rebellion&#8217;s need for pilots.</p>
 ]]></content>
   </entry>
