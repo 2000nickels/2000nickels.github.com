@@ -34,7 +34,7 @@ When we plot the cumulative distributions of the *pre-* and *post-goal* shows, i
 
 ### The Jinx
 
-The interesting question is: can John jinx the show by saying it will be short?  The data here is a little more complicated.  In the cumulative distribution plot below, we can see both the *short* and the *not-short* episode lengths.  While 2 out of 3 of the longest episodes were in the *short* group, the median episode length is 7 minutes less when he calls it a "short" show.  Also, 4 of the 5 shortest episodes belong to the *short* group, and the average *short* show is 103 minutes versus 109 minutes for the *not-short* shows.  So, we can disprove the jinx; when John says it will be a short show, I'm going to bet that it will be a shorter show.
+The interesting question is: can John jinx the show by saying it will be short?  The data here is a little more complicated.  In the cumulative distribution plot below, we can see both the *short* and the *not-short* episode lengths.  While 2 out of 3 of the longest episodes were in the *short* group, the median episode length is 7 minutes less when he calls it a "short" show.  Also, 4 of the 5 shortest episodes belong to the *short* group, and the average *short* show is 103 minutes versus 109 minutes for the *not-short* shows.  So, we can disprove the jinx; when John says it will be a short show, I'm going to bet that it will be shorter.
 
 {% img /images/hypercritical_length_short_cdf.png Cumulative distribution of pre- and post-goal shows %}
 
