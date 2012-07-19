@@ -39,3 +39,7 @@ The interesting question is: can John jinx the show by saying it will be short? 
 {% img /images/hypercritical_length_short_cdf.png Cumulative distribution of pre- and post-goal shows %}
 
 Let me express my thanks to John Siracusa and Dan Benjamin for making the Hypercritical podcast.  Long or short, I look forward to it every week.
+
+**Update:** For your analysis pleasure, I've put the [raw data into a Google spreadsheet](https://docs.google.com/spreadsheet/ccc?key=0An2aYNMmjYsXdFZrWlhuMDJaSkJhZHVRdzZMMnlmMmc#gid=0). That includes the episode titles, lengths and what John said to make me call it a *short* show.
+
+
