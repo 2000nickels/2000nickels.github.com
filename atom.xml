@@ -4,7 +4,7 @@
   <title><![CDATA[2000 Nickels]]></title>
   <link href="http://2000nickels.github.com/atom.xml" rel="self"/>
   <link href="http://2000nickels.github.com/"/>
-  <updated>2012-07-18T21:12:55-04:00</updated>
+  <updated>2012-07-19T20:48:14-04:00</updated>
   <id>http://2000nickels.github.com/</id>
   <author>
     <name><![CDATA[Nic]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Overcompensating for the Length]]></title>
+    <link href="http://2000nickels.github.com/blog/2012/07/19/overcompensating/"/>
+    <updated>2012-07-19T20:07:00-04:00</updated>
+    <id>http://2000nickels.github.com/blog/2012/07/19/overcompensating</id>
+    <content type="html"><![CDATA[<p>Who knew it could be so fun to calculate statistics about the length of a podcast? Kieran Healy has made some <a href="http://www.kieranhealy.org/blog/archives/2012/07/13/trying-to-rein-it-in/">beautiful plots</a>, as well as subjecting <a href="http://www.kieranhealy.org/blog/archives/2012/07/17/talk-radio/">other 5by5 shows</a> to the same treatment. <a href="https://twitter.com/olihawkins">Oli Hawkins</a> did some <a href="https://twitter.com/olihawkins/status/225639768229289986">nice hypothesis testing</a> on Twitter.</p>
+
+<p>But Don Schaffner answered the question we all want to know: how long before 5by5 is <a href="http://donschaffner.tumblr.com/post/27430785897/while-2000nickels-and-kjhealy-have-crafted-elegant">running Hypercritical 24x7</a>?  By fitting a line through all the shows, he showed the answer is 371 years.</p>
+
+<p>What about the shows just before episode 51, where John Siracusa said, &#8220;I want to try for something shorter.&#8221; If he hadn&#8217;t started to rein it in, how bad would it be?  This bad:</p>
+
+<p><img src="http://2000nickels.github.com/images/overcompensating_singularity_Run-up.png" title="Linear fit of episodes 35-50 in the run-up to the goal." ></p>
+
+<p>After doing a <a href="http://www.wired.com/wiredscience/2011/01/linear-regression-with-pylab/">linear regression</a> on episodes 35 through 50 (shown in red), we see the length is increasing at 2.75 minutes per episode.  At that rate, we reach the 5by5 singularity (Siracusarity?) at <a href="http://5by5.tv/hypercritical">Hypercritical</a> episode #3672 in a short 69 years.</p>
+
+<p>So, John&#8217;s true goal is revealed and achieved: Hypercritical has stopped getting longer.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hypercritical Length]]></title>
