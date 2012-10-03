@@ -4,7 +4,7 @@
   <title><![CDATA[2000 Nickels]]></title>
   <link href="http://2000nickels.github.com/atom.xml" rel="self"/>
   <link href="http://2000nickels.github.com/"/>
-  <updated>2012-07-19T20:48:14-04:00</updated>
+  <updated>2012-10-03T07:29:02-04:00</updated>
   <id>http://2000nickels.github.com/</id>
   <author>
     <name><![CDATA[Nic]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Edgar Allan Poe, Thomas the Tank Engine, and LOLcats]]></title>
+    <link href="http://2000nickels.github.com/blog/2012/10/02/edgar-allan-poe/"/>
+    <updated>2012-10-02T21:03:00-04:00</updated>
+    <id>http://2000nickels.github.com/blog/2012/10/02/edgar-allan-poe</id>
+    <content type="html"><![CDATA[<p><img src="http://2000nickels.github.com/images/LOLPOE_sad_story_of_henry.jpg"></p>
+
+<p>The Rev. Awdry draws on
+<a href="http://www.literature.org/authors/poe-edgar-allan/amontillado.html">Poe</a>
+in writing &#8220;The Sad Story of Henry.&#8221;  He&#8217;s trying to tell us that
+Henry has a substance abuse problem and the Fat Controller never
+really dealt with his anger issues.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Overcompensating for the Length]]></title>
