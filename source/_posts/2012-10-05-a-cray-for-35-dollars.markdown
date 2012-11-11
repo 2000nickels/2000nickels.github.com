@@ -83,18 +83,21 @@ So, that's 46.540 degrees C.  See http://www.raspberrypi.org/phpBB3/viewtopic.ph
 
 Here are the comparison numbers from the [Linpack Benchmark Report](http://www.netlib.org/utk/people/JackDongarra/faq-linpack.html#_Toc27885750):
 
-Year | Computer | Processors | MFLOPS
-----:|:---------|-----------:|------:
-1991 | CRAY C90 | 16 | 403
-1990 | CRAY Y-MP | 8 | 275
-1989 | CRAY Y-MP | 8 | 275
-1988 | CRAY Y-MP | 1 | 74
-**2012** | **Raspberry Pi (Turbo mode)** | **1** | **63**
-1987 | ETA 10-E | 1 | 52
-1986 | NEC SX-2 | 1 | 46
-1985 | NEC SX-2 | 1 | 46
-**2012** | **Raspberry Pi (Stock)** | **1** | **41**
-1984 | CRAY X-MP | 1 | 21
-1983 | CRAY 1 | 1 | 12
-1979 | CRAY 1 | 1 | 3.4
+Year | Computer |MFLOPS
+----:|:---------|------:
+1988 | CRAY Y-MP | 74
+**2012** | **Raspberry Pi (Turbo mode)** | **63**
+1987 | ETA 10-E | 52
+1986 | NEC SX-2 | 46
+1985 | NEC SX-2 | 46
+**2012** | **Raspberry Pi (Stock)** | **41**
+1984 | CRAY X-MP | 21
+1983 | CRAY 1 | 12
+1979 | CRAY 1 | 3.4
+
+
+So, the Raspberry Pi that you bought for $35 is the number-crunching
+equivalent of a Cray X-MP.  Taken that is from 1984, but remember that 
+today's $35 dollars is only $15 in 1984.
+
 
