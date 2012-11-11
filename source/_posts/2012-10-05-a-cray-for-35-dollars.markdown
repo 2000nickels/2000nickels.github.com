@@ -6,12 +6,14 @@ comments: true
 categories: 
 ---
 
-Since the new Raspbian distribution has hardware accelerated floating point operations,
-I wanted to test how fast the Raspberry Pi can run.  But what to use for a benchmark?  
-Well, [LINPACK](http://en.wikipedia.org/wiki/LINPACK_benchmarks) is the historical choice
-for evaluating floating point performance.  Sure, the Pi doesn't come with a FORTRAN compiler,
-but there is a C version of the benchmark that I got to compile with a 
-[few minor changes](https://github.com/2000nickels/linpackc).
+Since the new Raspbian distribution has hardware accelerated floating
+point operations, I wanted to test how fast the Raspberry Pi can run.
+But what to use for a benchmark?  Well,
+[LINPACK](http://en.wikipedia.org/wiki/LINPACK_benchmarks) is the
+historical choice for evaluating floating point performance.  Sure,
+the Pi doesn't come with a FORTRAN compiler, but there is a C version
+of the benchmark that I got to compile with a [few minor
+changes](https://github.com/2000nickels/linpackc).
 
 
 ## After the update to Raspbian 2012-09-18, but no overclocking ##
@@ -78,4 +80,21 @@ And checking the CPU temperature:
 
 So, that's 46.540 degrees C.  See http://www.raspberrypi.org/phpBB3/viewtopic.php?f=29&t=6201&start=325#p173006
 
+
+Here are the comparison numbers from the [Linpack Benchmark Report](http://www.netlib.org/utk/people/JackDongarra/faq-linpack.html#_Toc27885750):
+
+Year | Computer | Processors | MFLOPS
+----:|:---------|-----------:|------:
+1991 | CRAY C90 | 16 | 403
+1990 | CRAY Y-MP | 8 | 275
+1989 | CRAY Y-MP | 8 | 275
+1988 | CRAY Y-MP | 1 | 74
+**2012** | **Raspberry Pi (Turbo mode)** | **1** | **63**
+1987 | ETA 10-E | 1 | 52
+1986 | NEC SX-2 | 1 | 46
+1985 | NEC SX-2 | 1 | 46
+**2012** | **Raspberry Pi (Stock)** | **1** | **41**
+1984 | CRAY X-MP | 1 | 21
+1983 | CRAY 1 | 1 | 12
+1979 | CRAY 1 | 1 | 3.4
 
