@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A Cray for $35"
-date: 2012-10-05 06:27
+date: 2012-11-19 17:00
 comments: true
 categories: 
 ---
@@ -15,11 +15,8 @@ the Pi doesn't come with a FORTRAN compiler, but there is a C version
 of the benchmark that I got to compile with a [few minor
 changes](https://github.com/2000nickels/linpackc).
 
+Using the Raspbian Wheezy (2012-09-18) image, here are the results from linpack:
 
-## After the update to Raspbian 2012-09-18, but no overclocking ##
-
-    pi@raspberrypi ~/linpackc $ ./linpackc 
-    
     Rolled Double Precision Linpack
     
          norm. resid      resid           machep         x[0]-1        x[n-1]-1
@@ -38,22 +35,17 @@ changes](https://github.com/2000nickels/linpackc).
            0.02       0.00       0.02      42256       0.05       0.29
     Rolled Double  Precision 40655 Kflops ; 1000 Reps 
        
-
-## After enabling Turbo mode ##
-
-To enable the Turbo mode, use the following command:
+So that works out to be 41 MFLOPS.  Not bad for a 700 MHz processor.
+But what if we do enable overclocking with the following command:
 
     sudo raspi-config
 
-Under the overclocking???? section, choose the "Turbo" option:
+then, under the overclocking section, choose the
+[Turbo](http://www.raspberrypi.org/archives/2008) option:
 
-      Turbo  1000MHz ARM, 500MHz core, 500MHz SDRAM, 6 overvolt
+    Turbo  1000MHz ARM, 500MHz core, 500MHz SDRAM, 6 overvolt
 
-Then select "Finsh", and then say "Yes" when it raspi-config asks to reboot.
-
-
-
-    pi@raspberrypi ~/linpackc $ ./linpackc 
+The turbo mode runs at 1000 MHz and gives the following results:
 
     Rolled Double Precision Linpack
 
@@ -73,15 +65,10 @@ Then select "Finsh", and then say "Yes" when it raspi-config asks to reboot.
 	   0.01       0.00       0.01      65149       0.03       0.19
     Rolled Double  Precision 62709 Kflops ; 1000 Reps 
 
-And checking the CPU temperature:
-
-    pi@raspberrypi ~/linpackc $ cat /sys/class/thermal/thermal_zone0/temp 
-    46540
-
-So, that's 46.540 degrees C.  See http://www.raspberrypi.org/phpBB3/viewtopic.php?f=29&t=6201&start=325#p173006
-
-
-Here are the comparison numbers from the [Linpack Benchmark Report](http://www.netlib.org/utk/people/JackDongarra/faq-linpack.html#_Toc27885750):
+The overclocking improves the performance to 63 MFLOPS.  To provide
+some comparison values, here are the comparison numbers from the
+[Linpack Benchmark
+Report](http://www.netlib.org/utk/people/JackDongarra/faq-linpack.html#_Toc27885750):
 
 Year | Computer |MFLOPS
 ----:|:---------|------:
@@ -96,8 +83,7 @@ Year | Computer |MFLOPS
 1979 | CRAY 1 | 3.4
 
 
-So, the Raspberry Pi that you bought for $35 is the number-crunching
-equivalent of a Cray X-MP.  Taken that is from 1984, but remember that 
-today's $35 dollars is only $15 in 1984.
+So, the Raspberry Pi that I bought for $35 is the number-crunching
+equivalent of three Cray X-MP supercomputers.  Not bad.  
 
 
