@@ -8,13 +8,10 @@
 * + table th {
   padding: .5em 1em .25em 1em;
   background-color: #ddd;
-  /* border: 1px solid black; */
-  /* border-bottom: 2px solid black; */
 }
 
 * + table td {
   padding: .25em 1em .25em 1em;
-  /* border: 1px solid black; */
   border-bottom: 1px solid #eee;
 }
 
