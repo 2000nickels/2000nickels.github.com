@@ -4,7 +4,7 @@
   <title><![CDATA[2000 Nickels]]></title>
   <link href="http://2000nickels.github.com/atom.xml" rel="self"/>
   <link href="http://2000nickels.github.com/"/>
-  <updated>2012-10-03T07:29:02-04:00</updated>
+  <updated>2012-11-19T21:05:30-05:00</updated>
   <id>http://2000nickels.github.com/</id>
   <author>
     <name><![CDATA[Nic]]></name>
@@ -12,6 +12,142 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[A Cray for $35]]></title>
+    <link href="http://2000nickels.github.com/blog/2012/11/19/a-cray-for-35-dollars/"/>
+    <updated>2012-11-19T17:00:00-05:00</updated>
+    <id>http://2000nickels.github.com/blog/2012/11/19/a-cray-for-35-dollars</id>
+    <content type="html"><![CDATA[<p>Since the new Raspbian distribution has hardware accelerated floating
+point operations, I wanted to test how fast the Raspberry Pi can run.
+But what to use for a benchmark?  Well,
+<a href="http://en.wikipedia.org/wiki/LINPACK_benchmarks">LINPACK</a> is the
+historical choice for evaluating floating point performance.  Sure,
+the Pi doesn&#8217;t come with a FORTRAN compiler, but there is a C version
+of the benchmark that I got to compile with a <a href="https://github.com/2000nickels/linpackc">few minor
+changes</a>.</p>
+
+<p>Using the Raspbian Wheezy (2012-09-18) image, here are the results from linpack:</p>
+
+<pre><code>Rolled Double Precision Linpack
+
+     norm. resid      resid           machep         x[0]-1        x[n-1]-1
+       1.7        7.41628980e-14  2.22044605e-16 -1.49880108e-14 -1.89848137e-14
+    times are reported for matrices of order   100
+      dgefa      dgesl      total       kflops     unit      ratio
+ times for array with leading dimension of  201
+       0.02       0.00       0.02      34333       0.06       0.36
+       0.01       0.00       0.01      68667       0.03       0.18
+       0.01       0.00       0.01      68667       0.03       0.18
+       0.02       0.00       0.02      40655       0.05       0.30
+ times for array with leading dimension of 200
+       0.02       0.00       0.02      34333       0.06       0.36
+       0.02       0.00       0.02      34333       0.06       0.36
+       0.01       0.00       0.01      68667       0.03       0.18
+       0.02       0.00       0.02      42256       0.05       0.29
+Rolled Double  Precision 40655 Kflops ; 1000 Reps 
+</code></pre>
+
+<p>So that works out to be 41 MFLOPS.  Not bad for a 700 MHz processor.
+But what if we do enable overclocking with the following command:</p>
+
+<pre><code>sudo raspi-config
+</code></pre>
+
+<p>then, under the overclocking section, choose the
+<a href="http://www.raspberrypi.org/archives/2008">Turbo</a> option:</p>
+
+<pre><code>Turbo  1000MHz ARM, 500MHz core, 500MHz SDRAM, 6 overvolt
+</code></pre>
+
+<p>The turbo mode runs at 1000 MHz and gives the following results:</p>
+
+<pre><code>Rolled Double Precision Linpack
+
+ norm. resid      resid           machep         x[0]-1        x[n-1]-1
+   1.7        7.41628980e-14  2.22044605e-16 -1.49880108e-14 -1.89848137e-14
+times are reported for matrices of order   100
+  dgefa      dgesl      total       kflops     unit      ratio
+ times for array with leading dimension of  201
+   0.01       0.00       0.01      68667       0.03       0.18
+   0.01       0.00       0.01      68667       0.03       0.18
+   0.01       0.00       0.01      68667       0.03       0.18
+   0.01       0.00       0.01      62709       0.03       0.20
+ times for array with leading dimension of 200
+   0.01       0.00       0.01      68667       0.03       0.18
+   0.01       0.00       0.01      68667       0.03       0.18
+   0.01       0.00       0.01      68667       0.03       0.18
+   0.01       0.00       0.01      65149       0.03       0.19
+Rolled Double  Precision 62709 Kflops ; 1000 Reps 
+</code></pre>
+
+<p>The overclocking improves the performance to 63 MFLOPS.  To provide
+some comparison values, here are the comparison numbers from the
+<a href="http://www.netlib.org/utk/people/JackDongarra/faq-linpack.html#_Toc27885750">Linpack Benchmark
+Report</a>:</p>
+
+<table>
+<thead>
+<tr>
+<th align="right">Year </th>
+<th align="left"> Computer </th>
+<th align="right">MFLOPS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">1988 </td>
+<td align="left"> CRAY Y-MP </td>
+<td align="right"> 74</td>
+</tr>
+<tr>
+<td align="right"><strong>2012</strong> </td>
+<td align="left"> <strong>Raspberry Pi (Turbo mode)</strong> </td>
+<td align="right"> <strong>63</strong></td>
+</tr>
+<tr>
+<td align="right">1987 </td>
+<td align="left"> ETA 10-E </td>
+<td align="right"> 52</td>
+</tr>
+<tr>
+<td align="right">1986 </td>
+<td align="left"> NEC SX-2 </td>
+<td align="right"> 46</td>
+</tr>
+<tr>
+<td align="right">1985 </td>
+<td align="left"> NEC SX-2 </td>
+<td align="right"> 46</td>
+</tr>
+<tr>
+<td align="right"><strong>2012</strong> </td>
+<td align="left"> <strong>Raspberry Pi (Stock)</strong> </td>
+<td align="right"> <strong>41</strong></td>
+</tr>
+<tr>
+<td align="right">1984 </td>
+<td align="left"> CRAY X-MP </td>
+<td align="right"> 21</td>
+</tr>
+<tr>
+<td align="right">1983 </td>
+<td align="left"> CRAY 1 </td>
+<td align="right"> 12</td>
+</tr>
+<tr>
+<td align="right">1979 </td>
+<td align="left"> CRAY 1 </td>
+<td align="right"> 3.4</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>So, the Raspberry Pi that I bought for $35 is the number-crunching
+equivalent of three Cray X-MP supercomputers.  Not bad.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Edgar Allan Poe, Thomas the Tank Engine, and LOLcats]]></title>
