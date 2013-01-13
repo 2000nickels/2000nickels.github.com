@@ -5,14 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - 2000 Nickels</title>
+  <title>iPython notebooks and OS X Mountain Lion - 2000 Nickels</title>
   <meta name="author" content="Nic">
 
   
-  <meta name="description" content="Blog Archive 2013 iPython notebooks and OS X Mountain Lion
-Jan 12 2013 2012 Hypercriticality
-Nov 29 2012 A Cray for $35
-Nov 19 2012 Edgar Allan Poe &hellip;">
+  <meta name="description" content="To get iPython notebooks running under OS X Mountain Lion, the first thing to install is install Chris Fonnesbeck&#8217;s excellent Scipy Superpack. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +18,7 @@ Nov 19 2012 Edgar Allan Poe &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://2000nickels.github.com/blog/archives/">
+  <link rel="canonical" href="http://2000nickels.github.com/blog/2013/01/12/ipython-notebooks-and-os-x-mountain-lion/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/stylesheets/data-table.css" media="screen, projection" rel="stylesheet" type="text/css">
@@ -79,94 +76,85 @@ Nov 19 2012 Edgar Allan Poe &hellip;">
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+    
+      <h1 class="entry-title">iPython Notebooks and OS X Mountain Lion</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-12T21:45:00-05:00" pubdate data-updated="true">Jan 12<span>th</span>, 2013</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
 
 
+<div class="entry-content"><p>To get <a href="http://ipython.org/ipython-doc/dev/interactive/htmlnotebook.html">iPython notebooks</a> running under OS X Mountain Lion, the first thing to install is install Chris Fonnesbeck&#8217;s excellent <a href="http://fonnesbeck.github.com/ScipySuperpack/">Scipy Superpack</a>.</p>
 
-  
-  <h2>2013</h2>
+<p>Once that was installed, I also had to install a few <a href="http://ipython.org/ipython-doc/dev/install/install.html#dependencies-for-the-ipython-html-notebook">dependencies</a> before the notebooks worked:</p>
 
-<article>
-  
-<h1><a href="/blog/2013/01/12/ipython-notebooks-and-os-x-mountain-lion/">iPython notebooks and OS X Mountain Lion</a></h1>
-<time datetime="2013-01-12T21:45:00-05:00" pubdate><span class='month'>Jan</span> <span class='day'>12</span> <span class='year'>2013</span></time>
-
-
-</article>
-
-
-
-  
-  <h2>2012</h2>
-
-<article>
-  
-<h1><a href="/blog/2012/11/29/hypercriticality/">Hypercriticality</a></h1>
-<time datetime="2012-11-29T21:05:00-05:00" pubdate><span class='month'>Nov</span> <span class='day'>29</span> <span class='year'>2012</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2012/11/19/a-cray-for-35-dollars/">A Cray for $35</a></h1>
-<time datetime="2012-11-19T17:00:00-05:00" pubdate><span class='month'>Nov</span> <span class='day'>19</span> <span class='year'>2012</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2012/10/02/edgar-allan-poe/">Edgar Allan Poe, Thomas the Tank Engine, and LOLcats</a></h1>
-<time datetime="2012-10-02T21:03:00-04:00" pubdate><span class='month'>Oct</span> <span class='day'>02</span> <span class='year'>2012</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2012/07/19/overcompensating/">Overcompensating for the Length</a></h1>
-<time datetime="2012-07-19T20:07:00-04:00" pubdate><span class='month'>Jul</span> <span class='day'>19</span> <span class='year'>2012</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2012/07/08/hypercritical-length/">Hypercritical Length</a></h1>
-<time datetime="2012-07-08T20:49:00-04:00" pubdate><span class='month'>Jul</span> <span class='day'>08</span> <span class='year'>2012</span></time>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2012/07/05/e-power-converter-biggs/">E. Power-Converter Biggs</a></h1>
-<time datetime="2012-07-05T17:01:00-04:00" pubdate><span class='month'>Jul</span> <span class='day'>05</span> <span class='year'>2012</span></time>
-
-
-</article>
-
+<pre><code>sudo easy_install ipython[zmq]
+sudo easy_install Tornado
+sudo easy_install Jinja2
+</code></pre>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Nic</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-12T21:45:00-05:00" pubdate data-updated="true">Jan 12<span>th</span>, 2013</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://2000nickels.github.com/blog/2013/01/12/ipython-notebooks-and-os-x-mountain-lion/" data-via="2000nickels" data-counturl="http://2000nickels.github.com/blog/2013/01/12/ipython-notebooks-and-os-x-mountain-lion/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/11/29/hypercriticality/" title="Previous Post: Hypercriticality">&laquo; Hypercriticality</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>

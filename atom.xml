@@ -4,7 +4,7 @@
   <title><![CDATA[2000 Nickels]]></title>
   <link href="http://2000nickels.github.com/atom.xml" rel="self"/>
   <link href="http://2000nickels.github.com/"/>
-  <updated>2012-11-29T21:32:39-05:00</updated>
+  <updated>2013-01-12T22:07:04-05:00</updated>
   <id>http://2000nickels.github.com/</id>
   <author>
     <name><![CDATA[Nic]]></name>
@@ -12,6 +12,22 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[iPython notebooks and OS X Mountain Lion]]></title>
+    <link href="http://2000nickels.github.com/blog/2013/01/12/ipython-notebooks-and-os-x-mountain-lion/"/>
+    <updated>2013-01-12T21:45:00-05:00</updated>
+    <id>http://2000nickels.github.com/blog/2013/01/12/ipython-notebooks-and-os-x-mountain-lion</id>
+    <content type="html"><![CDATA[<p>To get <a href="http://ipython.org/ipython-doc/dev/interactive/htmlnotebook.html">iPython notebooks</a> running under OS X Mountain Lion, the first thing to install is install Chris Fonnesbeck&#8217;s excellent <a href="http://fonnesbeck.github.com/ScipySuperpack/">Scipy Superpack</a>.</p>
+
+<p>Once that was installed, I also had to install a few <a href="http://ipython.org/ipython-doc/dev/install/install.html#dependencies-for-the-ipython-html-notebook">dependencies</a> before the notebooks worked:</p>
+
+<pre><code>sudo easy_install ipython[zmq]
+sudo easy_install Tornado
+sudo easy_install Jinja2
+</code></pre>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hypercriticality]]></title>
