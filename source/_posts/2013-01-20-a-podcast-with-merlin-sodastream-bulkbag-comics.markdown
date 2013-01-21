@@ -7,9 +7,9 @@ categories:
 ---
 
 I've found a newpaper clipping that might be of interest to fans of
-[Back to Work](http://5by5.tv/b2w), [Roderick on the
-Line](http://www.merlinmann.com/roderick/), and the many other
-podcasts with Merlin Mann.
+[Back to Work](http://5by5.tv/b2w), 
+[Roderick on the Line](http://www.merlinmann.com/roderick/), 
+and the many other podcasts with Merlin Mann.
 
 {% img /images/MerlinReadyFadedSmall.jpg A podcast with Merlin: SodaStream, BULKBUG, comics %}
 
