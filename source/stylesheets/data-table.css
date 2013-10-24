@@ -35,12 +35,12 @@
 }
 
 .narrowtable th {
-  padding: .1em .1em .25em .1em;
+  padding: .15em .15em .15em .15em;
   background-color: #ddd;
 }
 
 .narrowtable td {
-  padding: .1em .1em .1em .1em;
+  padding: .15em .15em .15em .15em;
   border-bottom: 1px solid #eee;
 }
 
