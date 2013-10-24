@@ -27,3 +27,20 @@
   text-align:center;
 }
 
+.narrowtable {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5em
+}
+
+.narrowtable th {
+  padding: .1em .1em .25em .1em;
+  background-color: #ddd;
+}
+
+.narrowtable td {
+  padding: .1em .1em .1em .1em;
+  border-bottom: 1px solid #eee;
+}
+
