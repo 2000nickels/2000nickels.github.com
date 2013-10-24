@@ -14,12 +14,10 @@ the interesting bits.
 
 Let's take a quick look at how each review links to itself and to
 previous versions.  I'm only using links in the review body and
-excluding the page navigation and other "chrome" links. The [10.9
-Mavericks review](http://arstechnica.com/apple/2013/10/os-x-10-9/) has
-the most internal links, 138, but that is fairly similar to the last
-four reviews. It references the older reviews back to [10.0 Cheetah](http://arstechnica.com/apple/apple/2001/04/macos-x/) but
-leaves off the Developer Previews.
-
+excluding the page navigation and other extra links.  While we could make
+some flashy plots, I channelled [Edward Tufte](http://www.edwardtufte.com/tufte/) 
+and just left it as a table of numbers.
+ 
 <table class="narrowtable">
 <tr>
     <th> </th>
@@ -297,6 +295,13 @@ leaves off the Developer Previews.
     <td align="right"> 0 </td>
 </tr>
 </table>
+
+The 
+[10.9 Mavericks review](http://arstechnica.com/apple/2013/10/os-x-10-9/) has
+the most internal links, 138, but that is fairly similar to the last
+four reviews. It references the older reviews back to 
+[10.0 Cheetah](http://arstechnica.com/apple/apple/2001/04/macos-x/) but
+leaves off the Developer Previews.
 
 My thanks to John for writing the reviews, and 
 [Ars Technica](http://arstechnica.com) for maintaining the archive of the
